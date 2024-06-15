@@ -19,7 +19,7 @@ public class ArrayListCRUD {
 		System.out.println("init block");
 		list = new ArrayList<Integer>();
 
-		/*
+		/*   i > 10 i is greater then
 		 * ensureCapacity method to ensure that the ArrayList can hold a specified this
 		 * method was introduce in java 1.2
 		 */
