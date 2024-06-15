@@ -67,11 +67,9 @@ public class ArrayListCRUD {
 
 	public List<Integer> removeSpecificElement(Integer element, String expression) {
 
-		list = Collections.synchronizedList(list);
 		if (!list.isEmpty()) {
-
+			
 			switch (expression) {
-
 			// concurrent modification exception
 			case "USING_ITERATOR":
 				Iterator<Integer> itr = list.iterator();
