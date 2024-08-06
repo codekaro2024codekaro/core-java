@@ -1,5 +1,6 @@
 package com.code.function;
 
+import java.util.function.DoubleFunction;
 import java.util.function.Function;
 
 public class FunctionConcept {
@@ -10,11 +11,14 @@ public class FunctionConcept {
 
 	static Function<Integer, Boolean> greaterThen = (element_value) -> element_value > 10;
 
+	static DoubleFunction<Double>   function = a-> a*9.8;
+	
 	public static void main(String[] args) {
 
 		System.out.println(concatfunction.apply("rahul"));
 		System.out.println(checkcontain.apply("rahul"));
 		System.out.println(greaterThen.apply(100));
+		System.out.println(function.apply(9));
 	}
 
 }
